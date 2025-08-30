@@ -492,8 +492,8 @@
       </div>
       
       <section class="cod-offers">
-        <h2 class="cod-section-title">Oferta Especial</h2>
-        <p class="cod-hero-subtitle">Oferta Especial Válida Apenas Hoje</p>
+        <h2 class="cod-section-title">Ofertas Especiais</h2>
+        <p class="cod-hero-subtitle">Escolha a Melhor Oferta para você</p>
         
         <div class="cod-offers-content" id="cod-offers-content">
         </div>
@@ -516,7 +516,7 @@
         <p class="cod-support-subtitle">Nossos especialistas estão disponíveis para tirar todas as suas dúvidas e ajudar você a agendar sua entrega o mais breve possível!</p>
         
         <div class="cod-support-whatsapp" id="cod-support-whatsapp">
-          <a class="cod-support-whatsapp-content" href="https://wa.me/null" target="_blank">
+          <a class="cod-support-whatsapp-content" href="https://wa.me/21989571825" target="_blank">
             <i class="fab fa-whatsapp"></i> Compre pelo WhatsApp
           </a>
         </div>
@@ -530,7 +530,7 @@
 
     <script>
       init = function(){
-        const offers = [{"name":"Alphasin","price_high":"267","price_low":"189.99","link":"https://https://entrega.logzz.com.br/pay/mem6qvy7g/2-por-189www.traceroutehub.com/2T6B3DZT/212KWGQ5/","saving":"77.01"}];
+        const offers = [{"name":"Alphasin","price_high":"267","price_low":"189.99","link":"https://entrega.logzz.com.br/pay/mem6qvy7g/2-por-189","saving":"77.01"},{"name":"Alphasin compre 1 e leve 2","price_high":"379.98","price_low":"189.00","link":"https://entrega.logzz.com.br/pay/mem6qvy7g/2-por-189","saving":"190.98"},{"name":"Alphasin 3 por 289","price_high":"569.97","price_low":"289","link":"https://entrega.logzz.com.br/pay/mem6qvy7g/3-por-289","saving":"280.97"}];
         const offersContent = document.getElementById('cod-offers-content');
         offersContent.innerHTML = offers.map((offer) => {
           return `
@@ -548,7 +548,7 @@
         }).join('');
 
         const supportWhatsapp = document.getElementById('cod-support-whatsapp');
-        const whatsapp = null;
+        const whatsapp = 21989571825;
         if(whatsapp){
           supportWhatsapp.style.display = 'block';
         }else{
